@@ -6,7 +6,7 @@ function Converter() {
   let [rgb, setRgb] = useState();
   function change(e) {
     setValue(e.target.value);
-    let res = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(color);
+    let res = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(e.target.value);
     let rgb = res ? `rgb(${parseInt(res[1], 16)}, ${parseInt(res[2], 16)}, ${parseInt(res[3], 16)})` : null;
     if (rgb !== null) {
       setColor(e.target.value);
