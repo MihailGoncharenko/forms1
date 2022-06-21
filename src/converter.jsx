@@ -20,8 +20,9 @@ function Converter() {
   return (
     <div className="converter" style={{ backgroundColor: color }}>
       <form>
-        <input value={value} onChange={change} />
+        <input value={value} onChange={change} placeholder="Введите hex"/>
         <label htmlFor="rgb">{rgb}</label>
+
       </form>
     </div>
   )
